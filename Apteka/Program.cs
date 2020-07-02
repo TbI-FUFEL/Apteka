@@ -8,6 +8,8 @@ namespace Apteka
 {
     static class Program
     {
+        //создание статического экземпляра класса модели ADO.EDM
+        public static АптекаEntities аптека = new АптекаEntities();
         /// <summary>
         /// Главная точка входа для приложения.
         /// </summary>
@@ -16,7 +18,7 @@ namespace Apteka
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new Menu());
         }
     }
 }
